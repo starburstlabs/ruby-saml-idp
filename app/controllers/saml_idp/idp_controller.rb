@@ -2,8 +2,6 @@ module SamlIdp
   class IdpController < ActionController::Base
     include SamlIdp::Controller
 
-    unloadable
-
     protect_from_forgery
 
     if Rails.version.to_i < 4
